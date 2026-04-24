@@ -1,0 +1,7 @@
+tensorflow>=2.20.0
+flask>=3.0.0
+numpy>=1.26.0
+scikit-learn>=1.7.0
+pillow>=10.0.0
+matplotlib>=3.8.0
+requests>=2.31.0

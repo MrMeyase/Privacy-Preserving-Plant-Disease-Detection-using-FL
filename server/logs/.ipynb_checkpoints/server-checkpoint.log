@@ -1,0 +1,43 @@
+2026-04-03 00:19:24,303 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 00:19:25,470 | INFO | Server initialized.
+2026-04-03 00:19:25,470 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 00:19:25,563 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 00:19:25,563 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 00:19:25,601 | INFO |  * Restarting with watchdog (windowsapi)
+2026-04-03 00:52:41,819 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 00:52:42,493 | INFO | Server initialized.
+2026-04-03 00:52:42,494 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 00:52:43,846 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 00:52:43,847 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 00:52:44,801 | INFO | 127.0.0.1 - - [03/Apr/2026 00:52:44] "GET /health HTTP/1.1" 200 -
+2026-04-03 00:52:44,858 | INFO | 127.0.0.1 - - [03/Apr/2026 00:52:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:23:29,312 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 15:23:30,046 | INFO | Server initialized.
+2026-04-03 15:23:30,047 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 15:23:30,135 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 15:23:30,135 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 15:23:37,632 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:37,994 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:23:43,280 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:43] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:57,104 | INFO | 127.0.0.1 - - [03/Apr/2026 15:23:57] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:57,258 | INFO | 127.0.0.1 - - [03/Apr/2026 15:23:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:24:52,649 | INFO | 127.0.0.1 - - [03/Apr/2026 15:24:52] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:27:31,819 | INFO | 127.0.0.1 - - [03/Apr/2026 15:27:31] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:39:44,192 | INFO | 127.0.0.1 - - [03/Apr/2026 15:39:44] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:40:33,432 | INFO | 127.0.0.1 - - [03/Apr/2026 15:40:33] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:01,787 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:01] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:03,820 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:03] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:04,027 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:04] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:06,086 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:06] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:07,121 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:07] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:08,376 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:08] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:42:57,986 | INFO | 127.0.0.1 - - [03/Apr/2026 15:42:57] "GET /health HTTP/1.1" 200 -

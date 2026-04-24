@@ -1,0 +1,207 @@
+#Commands and Working of the project
+
+cd D:\plant_fl_project
+python -m server.server
+
+http://127.0.0.1:8000/health
+
+To kill all servers:
+On windows: netstat -ano | findstr :8000
+
+Kill the PID:
+taskkill /PID <pid> /F
+
+http://localhost:8000/aggregate            //inside url tab
+curl -X POST http://localhost:8000/aggregate
+curl -X POST http://localhost:8000/evaluate
+
+////////////////////////////////////////////////////////////////////////////
+Based on your logs and the code we've implemented, here is a clear explanation of how your Federated Learning (FL) app works. It operates in four distinct phases:
+1. The Local Testing Phase (Predict Button)
+When you point your camera and press Predict:
+•
+The app uses the TFLiteHelper to run the current model (model.tflite) stored on your phone.
+•
+It processes the camera frame and shows you the result (e.g., Tomato Spider Mites).
+•
+Networking: None. This is 100% on the device.
+
+2. The Data Collection Phase (Upload Button)
+This is the most important step for "Learning." When you press Upload:
+•
+Server Log: 📊 PREDICTION: Label='...' | Confidence=0.52. The app tells the server what it saw so you can monitor real-world performance.
+•
+Local Storage: The app uses LocalDatasetHelper to save that image and the label into a private folder on your phone.
+•
+Why? The phone cannot "train" without data. Every time you press Upload, you are adding one more "lesson" for the phone to learn from during the next FL round.
+
+3. The Federated Learning Round (Train & Send Button)
+This is the "Brain" of the operation. Looking at your specific logs:
+•
+Step A (Download): Requesting global weights... -> Downloaded bytes: 10,359,100.
+◦
+The app downloads the current 2.5 million parameters from the server.
+•
+Step B (Local Training): Training started... -> Training done (3 seconds).
+◦
+The FLClient takes the global weights and "fine-tunes" them using the images you saved in Phase 2. (Currently, this is a simulated update, but it's ready for real TFLite training).
+•
+Step C (Upload): Uploading weights: 2,589,775.
+◦
+The app sends its "improved" version of the weights back to the server using Binary Transfer (efficient 4-byte floats) to prevent the phone from crashing.
+•
+Server Log: 📥 RECEIVED weights from android_client (3 samples). Pending: 1.
+◦
+The server acknowledges the update and puts it in a "waiting room" (Pending list).
+
+4. The Aggregation Phase (Server Side)
+Once you (the developer) decide you have enough updates from different clients:
+•
+You run: curl -X POST http://localhost:8000/aggregate.
+•
+FedAvg Algorithm: The server takes all pending updates and averages them. If Client A learned about "Tomato" and Client B learned about "Potato," the new averaged model will now be better at both.
+•
+Deployment: The server saves a new global_model.keras and exports a global_model.tflite.
+
+Summary of your specific logs:
+1.
+11:57:51: You pointed the camera at a Tomato plant and pressed Upload. The server logged the prediction.
+2.
+11:58:00: You pointed it at a Potato plant and pressed Upload. Total samples on phone = 2 or 3.
+3.
+11:58:17: You pressed Train & Send. The phone downloaded 10MB of data.
+4.
+11:58:22: The phone finished training and uploaded its update. The server now has 1 update waiting to be merged.
+Next Step: You should now run the /aggregate command on your PC to merge that update into the global model!
+
+...............................................................................................................
+
+After performing the aggregation, the .tflite file is stored on your PC (the server side) in the following directory:
+Path: D:/plant_fl_project/server/checkpoints/global_model.tflite
+Why is it there?
+Based on the aggregator.py logic we implemented:
+1.
+CHECKPOINTS_DIR is defined as the server/checkpoints folder.
+2.
+TFLITE_MODEL_PATH is set to CHECKPOINTS_DIR / "global_model.tflite".
+3.
+When you call /aggregate, the server runs export_to_tflite(), which converts the newly averaged Keras model into this TFLite file.
+
+How to get it onto your phone:
+You have two ways to use this new model in your app:
+1.
+Manual (For testing): Copy the file from your PC and replace the existing one in app/src/main/assets/model.tflite. Then rebuild your app.
+2.
+Automatic (The goal): We have already added a /get_model route to your server.py. In the next step, we can update the Android app to automatically download this file from http://<YOUR_IP>:8000/get_model so the app "updates its brain" without you needing to reinstall it.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+Part 1: Correcting your understanding of the App
+1.Predict Button: You are partially correct. The app uses TFLiteHelper to predict. However, it doesn't request the server during the click.
+◦Startup: The app tries to download the model as soon as it opens (onCreate).
+◦Fallback: If it can't find a model in local storage (updated_model.tflite), it uses the one bundled in the app's assets folder. It doesn't wait for the Predict button to be clicked to fetch.
+2.Upload Button: Correct. It saves the image to the phone's private local_dataset folder and sends a small notification to the laptop so you can see the results in your terminal.
+3.Train & Send Button: Correct. It downloads the "Global Weights," simulates training on the images you captured, and sends the new "Local Weights" back to the server.
+
+Part 2: What happens on the Server (Step-by-Step)
+After you click Train & Send and the server logs 📥 RECEIVED weights, here is exactly what happens next:
+Step 1: Receiving the Update (Binary to Model)
+The server receives a flat binary file (weights.bin). Because Keras models expect weights in specific shapes (e.g., a Conv2D layer might be [3, 3, 3, 32]), the server uses the rebuild_weights function to "unflatten" that binary data back into the correct mathematical shapes for your specific model.
+Step 2: The Waiting Room (pending_updates)
+The server does not update the global model immediately. It puts your update into a list called pending_updates. In a real-world scenario, the server would wait for 10 or 100 different phones to send their weights before moving to the next step.
+Step 3: Triggering Aggregation
+When you run the command: curl -X POST http://localhost:8000/aggregate on your laptop, you are telling the server to stop waiting and start the math.
+Step 4: Federated Averaging (FedAvg)
+The server runs the fedavg function. This is the "Learning" part of Federated Learning:
+•
+It looks at all updates in the "Waiting Room."
+•
+If Phone A trained on 10 images and Phone B trained on 90 images, it gives Phone B's weights more "importance."
+•
+It calculates the weighted average of all parameters. This creates a new set of weights that represents the combined knowledge of all phones.
+Step 5: Updating the "Brain"
+•
+The server sets these new averaged weights into its master model.
+•
+It saves the master model as global_model.keras.
+•
+Crucial Step: It runs export_to_tflite. This converts the heavy Keras model into the small .tflite format that Android understands.
+Step 6: Distribution
+The new global_model.tflite is now sitting in your server/checkpoints/ folder.
+•
+The next time any phone opens the app (or finishes a training round), it will call GET /get_model.
+•
+The server sends this new, improved file.
+•
+The phone saves it, reloads the TFLiteHelper, and the "Predict" button is now officially "smarter" than it was before.
+Step 7: Verification
+You run python -m server.evaluate. The server tests the new model against its own "gold standard" test data to confirm the accuracy actually went up.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+The reason we need a fallback—even though we try to download at startup—is due to three specific scenarios:
+1. The "Race Condition" (Asynchronous Download)
+When your app opens, onCreate starts the download in the background (it is asynchronous). However, the Android UI (Jetpack Compose) is extremely fast.
+•
+0ms: App starts, onCreate begins.
+•
+5ms: Background download starts (waiting for network).
+•
+50ms: The UI renders CameraScreen.
+•
+60ms: TFLiteHelper is initialized to start the camera.
+•
+2000ms: The 10MB model download finally finishes.
+Because the UI starts before the download finishes, TFLiteHelper needs something to load immediately so the app doesn't crash while waiting for the network.
+
+2. First-Time Launch (Cold Start)
+The very first time you ever install and open the app, your "local storage" (filesDir) is completely empty. There is no updated_model.tflite yet. If your laptop is turned off or your Wi-Fi is slow during that first launch, the app must have a "starter brain" (the asset model) to function. Otherwise, the "Predict" button would be broken until the first successful download.
+
+3. Reliability & Offline Use
+Federated Learning often happens in the field (literally, for a plant app!). If you are in a location with no internet:
+ 1.The startup download fails.
+ 2.The app checks local storage; if you've never successfully downloaded a model before, it’s not there.
+ 3.The Fallback to the assets folder ensures the app remains usable offline with the original factory      model.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Here are the exact file locations for the .tflite models on both the server and client sides, along with their roles in your Federated Learning system.
+1. Server Side (Laptop)
+This is where the "Master Brain" lives and gets updated after aggregation.
+•
+The Global Model (Aggregated)
+◦
+Path: D:/plant_fl_project/server/checkpoints/global_model.tflite
+◦
+Description: This is the most important file. It is created/overwritten every time you run the /aggregate command. It represents the combined knowledge of all participating clients.
+2. Client Side (Android Project Source)
+This is where you place the model if you want it to be included "out of the box" when you install the app.
+•The "Stock" Model (Factory Settings)
+◦Path: app/src/main/assets/model.tflite
+◦Description: This is the fallback model. The app uses this if it has never successfully downloaded an update from the server.
+
+3. Client Side (Android Device Internal)
+This is where the app saves models it downloads while running. You can only see this via Android Studio's Device File Explorer.
+•The "Updated" Model (Downloaded)
+◦Path: data/data/com.example.plantflclient/files/updated_model.tflite
+◦Description: When you click "Train & Send" (or on startup), the app downloads the server's global_model.tflite and saves it here. If this file exists, the app uses it instead of the one in the assets.
+
+Manual Sync Guide (How to move files)
+If you want to manually update the app without waiting for the network sync, follow these steps:
+A. To update the app's permanent "starting" model:
+1.
+Copy D:/plant_fl_project/server/checkpoints/global_model.tflite.
+2.
+Paste it into app/src/main/assets.
+3.
+Rename it to model.tflite (overwrite the old one).
+4.
+Re-run the app from Android Studio.
+
+B. To manually push a model to a running phone (Quickest):
+If you don't want to rebuild the whole app, use the Device File Explorer in Android Studio (usually bottom right):
+1.Navigate to data/data/com.example.plantflclient/files/.
+2.Right-click the files folder and select Upload.
+3.Select the global_model.tflite from your laptop's server/checkpoints/ folder.
+4.Once uploaded, rename it on the device to updated_model.tflite.
+5.Restart the app. It will now load this new "brain" immediately.

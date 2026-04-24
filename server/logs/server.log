@@ -1,0 +1,386 @@
+2026-04-03 00:19:24,303 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 00:19:25,470 | INFO | Server initialized.
+2026-04-03 00:19:25,470 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 00:19:25,563 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 00:19:25,563 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 00:19:25,601 | INFO |  * Restarting with watchdog (windowsapi)
+2026-04-03 00:52:41,819 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 00:52:42,493 | INFO | Server initialized.
+2026-04-03 00:52:42,494 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 00:52:43,846 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 00:52:43,847 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 00:52:44,801 | INFO | 127.0.0.1 - - [03/Apr/2026 00:52:44] "GET /health HTTP/1.1" 200 -
+2026-04-03 00:52:44,858 | INFO | 127.0.0.1 - - [03/Apr/2026 00:52:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:23:29,312 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 15:23:30,046 | INFO | Server initialized.
+2026-04-03 15:23:30,047 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 15:23:30,135 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 15:23:30,135 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 15:23:37,632 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:37,994 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:23:43,280 | INFO | 192.168.1.44 - - [03/Apr/2026 15:23:43] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:57,104 | INFO | 127.0.0.1 - - [03/Apr/2026 15:23:57] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 15:23:57,258 | INFO | 127.0.0.1 - - [03/Apr/2026 15:23:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 15:24:52,649 | INFO | 127.0.0.1 - - [03/Apr/2026 15:24:52] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:27:31,819 | INFO | 127.0.0.1 - - [03/Apr/2026 15:27:31] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:39:44,192 | INFO | 127.0.0.1 - - [03/Apr/2026 15:39:44] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:40:33,432 | INFO | 127.0.0.1 - - [03/Apr/2026 15:40:33] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:01,787 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:01] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:03,820 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:03] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:04,027 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:04] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:06,086 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:06] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:07,121 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:07] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:41:08,376 | INFO | 127.0.0.1 - - [03/Apr/2026 15:41:08] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:42:57,986 | INFO | 127.0.0.1 - - [03/Apr/2026 15:42:57] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:58:33,199 | INFO | 127.0.0.1 - - [03/Apr/2026 15:58:33] "GET /health HTTP/1.1" 200 -
+2026-04-03 15:59:55,552 | INFO | 127.0.0.1 - - [03/Apr/2026 15:59:55] "GET /health HTTP/1.1" 200 -
+2026-04-03 16:05:36,447 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 16:05:36,870 | INFO | Server initialized.
+2026-04-03 16:05:36,870 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 16:05:36,906 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 16:05:36,907 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 16:05:54,456 | INFO | 127.0.0.1 - - [03/Apr/2026 16:05:54] "GET /health HTTP/1.1" 200 -
+2026-04-03 16:06:25,015 | INFO | 127.0.0.1 - - [03/Apr/2026 16:06:25] "GET /health HTTP/1.1" 200 -
+2026-04-03 16:11:21,707 | INFO | 127.0.0.1 - - [03/Apr/2026 16:11:21] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:01:24,684 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 17:01:25,149 | INFO | Server initialized.
+2026-04-03 17:01:25,149 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 17:01:25,208 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 17:01:25,209 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 17:01:37,598 | INFO | 192.168.1.44 - - [03/Apr/2026 17:01:37] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 17:01:48,766 | INFO | 192.168.1.44 - - [03/Apr/2026 17:01:48] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 17:01:58,573 | INFO | 192.168.1.44 - - [03/Apr/2026 17:01:58] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:02:36,945 | INFO | 192.168.1.44 - - [03/Apr/2026 17:02:36] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:03:23,951 | INFO | 192.168.1.44 - - [03/Apr/2026 17:03:23] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:03:26,458 | INFO | 192.168.1.44 - - [03/Apr/2026 17:03:26] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:10:33,447 | INFO | 127.0.0.1 - - [03/Apr/2026 17:10:33] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:11:14,240 | INFO | 192.168.1.44 - - [03/Apr/2026 17:11:14] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:16:08,413 | INFO | 192.168.1.39 - - [03/Apr/2026 17:16:08] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:16:08,614 | INFO | 192.168.1.39 - - [03/Apr/2026 17:16:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-03 17:16:14,010 | INFO | 192.168.1.39 - - [03/Apr/2026 17:16:14] "GET /health HTTP/1.1" 200 -
+2026-04-03 17:54:55,863 | INFO | 192.168.1.44 - - [03/Apr/2026 17:54:55] "[33mGET /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 18:09:54,996 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 18:09:55,464 | INFO | Server initialized.
+2026-04-03 18:09:55,465 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 18:09:56,823 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 18:09:56,823 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 18:10:01,826 | INFO | 192.168.1.44 - - [03/Apr/2026 18:10:01] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 18:10:13,484 | INFO | 192.168.1.44 - - [03/Apr/2026 18:10:13] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:10:48,936 | INFO | 192.168.1.44 - - [03/Apr/2026 18:10:48] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:11:42,641 | INFO | 192.168.1.44 - - [03/Apr/2026 18:11:42] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:13:13,322 | INFO | 192.168.1.44 - - [03/Apr/2026 18:13:13] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:31:42,878 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 18:31:43,533 | INFO | Server initialized.
+2026-04-03 18:31:43,533 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 18:31:44,903 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 18:31:44,904 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 18:33:49,653 | INFO | 192.168.1.44 - - [03/Apr/2026 18:33:49] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:33:52,744 | INFO | 192.168.1.44 - - [03/Apr/2026 18:33:52] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:33:52,960 | INFO | 192.168.1.44 - - [03/Apr/2026 18:33:52] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:35:07,739 | INFO | 192.168.1.44 - - [03/Apr/2026 18:35:07] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:38:32,088 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 18:38:32,561 | INFO | Server initialized.
+2026-04-03 18:38:32,562 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 18:38:33,949 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 18:38:33,950 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 18:38:40,630 | INFO | 192.168.1.44 - - [03/Apr/2026 18:38:40] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:38:47,656 | INFO | 192.168.1.44 - - [03/Apr/2026 18:38:47] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:40:42,113 | INFO | 192.168.1.44 - - [03/Apr/2026 18:40:42] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 18:41:21,781 | INFO | 192.168.1.44 - - [03/Apr/2026 18:41:21] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 18:54:04,307 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 18:54:04,750 | INFO | Server initialized.
+2026-04-03 18:54:04,750 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 18:54:06,105 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 18:54:06,106 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 18:54:24,490 | INFO | 192.168.1.44 - - [03/Apr/2026 18:54:24] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 18:54:31,801 | INFO | 192.168.1.44 - - [03/Apr/2026 18:54:31] "GET /health HTTP/1.1" 200 -
+2026-04-03 18:54:57,504 | INFO | 192.168.1.44 - - [03/Apr/2026 18:54:57] "[33mGET /update-weights HTTP/1.1[0m" 404 -
+2026-04-03 18:55:11,695 | INFO | 192.168.1.44 - - [03/Apr/2026 18:55:11] "[33mGET /update_weights HTTP/1.1[0m" 404 -
+2026-04-03 19:32:26,486 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 19:32:27,294 | INFO | Server initialized.
+2026-04-03 19:32:27,295 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 19:32:28,651 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 19:32:28,651 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 19:33:51,071 | INFO | 192.168.1.39 - - [03/Apr/2026 19:33:51] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 19:33:51,128 | INFO | 192.168.1.39 - - [03/Apr/2026 19:33:51] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 19:34:23,704 | INFO | 192.168.1.39 - - [03/Apr/2026 19:34:23] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 19:34:25,073 | INFO | 192.168.1.39 - - [03/Apr/2026 19:34:25] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 19:51:25,975 | INFO | 192.168.1.39 - - [03/Apr/2026 19:51:25] "GET /health HTTP/1.1" 200 -
+2026-04-03 19:51:52,282 | INFO | 192.168.1.39 - - [03/Apr/2026 19:51:52] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 19:51:54,642 | INFO | 192.168.1.39 - - [03/Apr/2026 19:51:54] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 19:52:19,692 | INFO | 192.168.1.44 - - [03/Apr/2026 19:52:19] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-03 19:52:26,624 | INFO | 192.168.1.44 - - [03/Apr/2026 19:52:26] "GET /health HTTP/1.1" 200 -
+2026-04-03 19:52:48,093 | INFO | 192.168.1.39 - - [03/Apr/2026 19:52:48] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 19:52:50,014 | INFO | 192.168.1.39 - - [03/Apr/2026 19:52:50] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 20:05:37,139 | INFO | 192.168.1.39 - - [03/Apr/2026 20:05:37] "GET /health HTTP/1.1" 200 -
+2026-04-03 20:05:54,478 | INFO | 192.168.1.39 - - [03/Apr/2026 20:05:54] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 20:05:55,818 | INFO | 192.168.1.39 - - [03/Apr/2026 20:05:55] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 20:05:55,892 | INFO | 192.168.1.39 - - [03/Apr/2026 20:05:55] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 20:06:26,483 | INFO | 192.168.1.44 - - [03/Apr/2026 20:06:26] "GET /health HTTP/1.1" 200 -
+2026-04-03 20:06:51,383 | INFO | 192.168.1.39 - - [03/Apr/2026 20:06:51] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 20:06:52,707 | INFO | 192.168.1.39 - - [03/Apr/2026 20:06:52] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 20:06:52,729 | INFO | 192.168.1.39 - - [03/Apr/2026 20:06:52] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:06:27,898 | INFO | 192.168.1.39 - - [03/Apr/2026 21:06:27] "GET /health HTTP/1.1" 200 -
+2026-04-03 21:07:21,809 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:21] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 21:07:25,668 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:25] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:07:25,696 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:25] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:07:53,818 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:53] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:07:53,848 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:53] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:07:53,897 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:53] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:07:53,937 | INFO | 192.168.1.39 - - [03/Apr/2026 21:07:53] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:23:32,447 | INFO | 192.168.1.39 - - [03/Apr/2026 21:23:32] "GET /health HTTP/1.1" 200 -
+2026-04-03 21:23:57,022 | INFO | 192.168.1.39 - - [03/Apr/2026 21:23:57] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 21:23:59,904 | INFO | 192.168.1.39 - - [03/Apr/2026 21:23:59] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:24:00,008 | INFO | 192.168.1.39 - - [03/Apr/2026 21:24:00] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:24:18,795 | INFO | 192.168.1.39 - - [03/Apr/2026 21:24:18] "[33mGET /get_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:24:18,821 | INFO | 192.168.1.39 - - [03/Apr/2026 21:24:18] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:49:05,255 | INFO | 192.168.1.39 - - [03/Apr/2026 21:49:05] "GET /health HTTP/1.1" 200 -
+2026-04-03 21:49:20,592 | INFO | 192.168.1.39 - - [03/Apr/2026 21:49:20] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 21:49:24,542 | INFO | 192.168.1.39 - - [03/Apr/2026 21:49:24] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:49:24,570 | INFO | 192.168.1.39 - - [03/Apr/2026 21:49:24] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:55:54,257 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 21:55:54,505 | INFO | 192.168.1.39 - - [03/Apr/2026 21:55:54] "GET /health HTTP/1.1" 200 -
+2026-04-03 21:55:54,782 | INFO | Server initialized.
+2026-04-03 21:55:54,782 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 21:55:54,834 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 21:55:54,834 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 21:56:07,230 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:07] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 21:56:10,683 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:10] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:56:10,715 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:10] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:56:39,981 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:39] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 21:56:42,437 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:42] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 21:56:42,462 | INFO | 192.168.1.39 - - [03/Apr/2026 21:56:42] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:01:13,650 | INFO | 192.168.1.44 - - [03/Apr/2026 22:01:13] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:01:15,679 | INFO | 192.168.1.44 - - [03/Apr/2026 22:01:15] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:01:19,027 | INFO | 192.168.1.44 - - [03/Apr/2026 22:01:19] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:03:00,560 | INFO | 192.168.1.39 - - [03/Apr/2026 22:03:00] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:03:15,279 | INFO | 192.168.1.39 - - [03/Apr/2026 22:03:15] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:03:17,872 | INFO | 192.168.1.39 - - [03/Apr/2026 22:03:17] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:03:17,976 | INFO | 192.168.1.39 - - [03/Apr/2026 22:03:17] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:09:01,288 | INFO | 192.168.1.39 - - [03/Apr/2026 22:09:01] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:09:46,047 | INFO | 192.168.1.39 - - [03/Apr/2026 22:09:46] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:10:09,548 | INFO | 192.168.1.39 - - [03/Apr/2026 22:10:09] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:10:13,049 | INFO | 192.168.1.39 - - [03/Apr/2026 22:10:13] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:10:13,086 | INFO | 192.168.1.39 - - [03/Apr/2026 22:10:13] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:11:11,074 | INFO | 192.168.1.44 - - [03/Apr/2026 22:11:11] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:14:14,032 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 22:14:14,660 | INFO | Server initialized.
+2026-04-03 22:14:14,660 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 22:14:14,709 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 22:14:14,710 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 22:14:34,869 | INFO | 192.168.1.39 - - [03/Apr/2026 22:14:34] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:14:37,008 | INFO | 192.168.1.39 - - [03/Apr/2026 22:14:37] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:14:37,041 | INFO | 192.168.1.39 - - [03/Apr/2026 22:14:37] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:15:05,218 | INFO | 192.168.1.39 - - [03/Apr/2026 22:15:05] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:15:06,318 | INFO | 192.168.1.39 - - [03/Apr/2026 22:15:06] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:15:06,348 | INFO | 192.168.1.39 - - [03/Apr/2026 22:15:06] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:15:08,020 | INFO | 192.168.1.39 - - [03/Apr/2026 22:15:08] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:15:08,054 | INFO | 192.168.1.39 - - [03/Apr/2026 22:15:08] "[33mPOST /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:16:46,209 | INFO | 192.168.1.44 - - [03/Apr/2026 22:16:46] "[33mGET /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:16:46,296 | INFO | 192.168.1.44 - - [03/Apr/2026 22:16:46] "[33mGET /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:16:49,941 | INFO | 192.168.1.44 - - [03/Apr/2026 22:16:49] "[33mGET /upload_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:23:06,968 | INFO | 192.168.1.44 - - [03/Apr/2026 22:23:06] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:23:30,198 | INFO | 192.168.1.44 - - [03/Apr/2026 22:23:30] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:24:23,171 | INFO | 192.168.1.44 - - [03/Apr/2026 22:24:23] "[33mGET /get_global_weights HTTP/1.1[0m" 404 -
+2026-04-03 22:31:36,219 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 22:31:36,684 | INFO | Server initialized.
+2026-04-03 22:31:36,684 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 22:31:36,721 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 22:31:36,722 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 22:32:01,352 | INFO | ➡️ GET /health
+2026-04-03 22:32:01,358 | INFO | 192.168.1.39 - - [03/Apr/2026 22:32:01] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:32:12,343 | INFO | ➡️ POST /upload_prediction
+2026-04-03 22:32:12,343 | INFO | 📩 /upload_prediction received: {'label': 'Tomato_Spider_mites_Two_spotted_spider_mite', 'confidence': 1}
+2026-04-03 22:32:12,347 | INFO | 192.168.1.39 - - [03/Apr/2026 22:32:12] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:32:15,935 | INFO | ➡️ GET /get_global_weights
+2026-04-03 22:32:16,213 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 22:32:18,655 | INFO | 192.168.1.39 - - [03/Apr/2026 22:32:18] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 22:32:47,983 | INFO | ➡️ GET /health
+2026-04-03 22:32:47,984 | INFO | 192.168.1.39 - - [03/Apr/2026 22:32:47] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:32:55,335 | INFO | ➡️ POST /upload_prediction
+2026-04-03 22:32:55,335 | INFO | 📩 /upload_prediction received: {'label': 'Tomato_Spider_mites_Two_spotted_spider_mite', 'confidence': 0.98}
+2026-04-03 22:32:55,336 | INFO | 192.168.1.39 - - [03/Apr/2026 22:32:55] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:32:58,789 | INFO | ➡️ GET /get_global_weights
+2026-04-03 22:32:59,044 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 22:33:02,715 | INFO | 192.168.1.39 - - [03/Apr/2026 22:33:02] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 22:33:15,927 | INFO | ➡️ POST /upload_weights
+2026-04-03 22:33:15,928 | INFO | 192.168.1.39 - - [03/Apr/2026 22:33:15] "[31m[1mPOST /upload_weights HTTP/1.1[0m" 400 -
+2026-04-03 22:33:57,647 | INFO | ➡️ POST /upload_prediction
+2026-04-03 22:33:57,647 | INFO | 📩 /upload_prediction received: {'label': 'Pepper__bell___Bacterial_spot', 'confidence': 0.49}
+2026-04-03 22:33:57,649 | INFO | 192.168.1.39 - - [03/Apr/2026 22:33:57] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 22:34:00,218 | INFO | ➡️ GET /get_global_weights
+2026-04-03 22:34:00,407 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 22:34:02,898 | INFO | 192.168.1.39 - - [03/Apr/2026 22:34:02] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 22:34:21,875 | INFO | ➡️ GET /get_global_weights
+2026-04-03 22:34:22,113 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 22:34:24,728 | INFO | 192.168.1.44 - - [03/Apr/2026 22:34:24] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 22:34:46,506 | INFO | ➡️ GET /health
+2026-04-03 22:34:46,538 | INFO | 192.168.1.44 - - [03/Apr/2026 22:34:46] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:34:50,783 | INFO | ➡️ GET /health
+2026-04-03 22:34:50,783 | INFO | 192.168.1.44 - - [03/Apr/2026 22:34:50] "GET /health HTTP/1.1" 200 -
+2026-04-03 22:57:27,012 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 22:57:27,490 | INFO | Server initialized.
+2026-04-03 22:57:27,490 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 22:57:27,519 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 22:57:27,520 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 22:59:52,041 | INFO | ➡️ GET /health
+2026-04-03 22:59:52,144 | INFO | 192.168.1.39 - - [03/Apr/2026 22:59:52] "GET /health HTTP/1.1" 200 -
+2026-04-03 23:00:12,704 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:00:12,712 | INFO | 📩 /upload_prediction received: {'label': 'Pepper__bell___Bacterial_spot', 'confidence': 1}
+2026-04-03 23:00:12,715 | INFO | 192.168.1.39 - - [03/Apr/2026 23:00:12] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:00:15,107 | INFO | ➡️ GET /get_global_weights
+2026-04-03 23:00:15,533 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 23:00:18,504 | INFO | 192.168.1.39 - - [03/Apr/2026 23:00:18] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 23:00:39,334 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:00:39,335 | INFO | 📩 /upload_prediction received: {'label': 'Tomato_Bacterial_spot', 'confidence': 0.38}
+2026-04-03 23:00:39,335 | INFO | 192.168.1.39 - - [03/Apr/2026 23:00:39] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:00:40,900 | INFO | ➡️ GET /get_global_weights
+2026-04-03 23:00:41,141 | INFO | 📤 /get_global_weights served | values=2589775
+2026-04-03 23:00:43,894 | INFO | 192.168.1.39 - - [03/Apr/2026 23:00:43] "GET /get_global_weights HTTP/1.1" 200 -
+2026-04-03 23:24:11,455 | INFO | ➡️ GET /health
+2026-04-03 23:24:11,473 | INFO | 192.168.1.39 - - [03/Apr/2026 23:24:11] "GET /health HTTP/1.1" 200 -
+2026-04-03 23:24:38,876 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:24:38,880 | INFO | 📩 /upload_prediction received: {'label': 'Pepper__bell___Bacterial_spot', 'confidence': 1}
+2026-04-03 23:24:38,886 | INFO | 192.168.1.39 - - [03/Apr/2026 23:24:38] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:24:40,218 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-03 23:24:40,264 | INFO | 192.168.1.39 - - [03/Apr/2026 23:24:40] "[33mGET /get_global_weights_binary HTTP/1.1[0m" 404 -
+2026-04-03 23:25:17,167 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:25:17,168 | INFO | 📩 /upload_prediction received: {'label': 'Pepper__bell___Bacterial_spot', 'confidence': 0.99}
+2026-04-03 23:25:17,170 | INFO | 192.168.1.39 - - [03/Apr/2026 23:25:17] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:25:18,797 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-03 23:25:18,798 | INFO | 192.168.1.39 - - [03/Apr/2026 23:25:18] "[33mGET /get_global_weights_binary HTTP/1.1[0m" 404 -
+2026-04-03 23:26:02,530 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:26:02,531 | INFO | 📩 /upload_prediction received: {'label': 'Pepper__bell___Bacterial_spot', 'confidence': 1}
+2026-04-03 23:26:02,531 | INFO | 192.168.1.39 - - [03/Apr/2026 23:26:02] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:26:04,382 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-03 23:26:04,383 | INFO | 192.168.1.39 - - [03/Apr/2026 23:26:04] "[33mGET /get_global_weights_binary HTTP/1.1[0m" 404 -
+2026-04-03 23:46:45,777 | WARNING | TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+2026-04-03 23:46:46,310 | INFO | Server initialized.
+2026-04-03 23:46:46,310 | INFO | Global model path: D:\plant_fl_project\server\checkpoints\global_model.keras
+2026-04-03 23:46:46,339 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.44:8000
+2026-04-03 23:46:46,340 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-03 23:47:37,779 | INFO | ➡️ GET /health
+2026-04-03 23:47:37,784 | INFO | 192.168.1.39 - - [03/Apr/2026 23:47:37] "GET /health HTTP/1.1" 200 -
+2026-04-03 23:48:39,458 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:48:39,459 | INFO | 📩 /upload_prediction received: {'label': 'Potato___Late_blight', 'confidence': 0.86}
+2026-04-03 23:48:39,460 | INFO | 192.168.1.39 - - [03/Apr/2026 23:48:39] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:48:41,396 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-03 23:48:41,478 | INFO | 192.168.1.39 - - [03/Apr/2026 23:48:41] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-03 23:48:44,874 | INFO | ➡️ POST /upload_weights_binary
+2026-04-03 23:48:46,942 | INFO | ✅ Received binary weights and updated global model
+2026-04-03 23:48:46,946 | INFO | 192.168.1.39 - - [03/Apr/2026 23:48:46] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-03 23:49:14,316 | INFO | ➡️ POST /upload_prediction
+2026-04-03 23:49:14,317 | INFO | 📩 /upload_prediction received: {'label': 'Potato___Late_blight', 'confidence': 1}
+2026-04-03 23:49:14,317 | INFO | 192.168.1.39 - - [03/Apr/2026 23:49:14] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-03 23:49:15,359 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-03 23:49:15,402 | INFO | 192.168.1.39 - - [03/Apr/2026 23:49:15] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-03 23:49:18,643 | INFO | ➡️ POST /upload_weights_binary
+2026-04-03 23:49:20,186 | INFO | ✅ Received binary weights and updated global model
+2026-04-03 23:49:20,189 | INFO | 192.168.1.39 - - [03/Apr/2026 23:49:20] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-03 23:53:48,123 | INFO | ➡️ GET /health
+2026-04-03 23:53:48,126 | INFO | 192.168.1.44 - - [03/Apr/2026 23:53:48] "GET /health HTTP/1.1" 200 -
+2026-04-03 23:57:32,107 | INFO | ➡️ GET /evaluate
+2026-04-04 00:00:31,144 | INFO | 192.168.1.44 - - [04/Apr/2026 00:00:31] "GET /evaluate HTTP/1.1" 200 -
+2026-04-04 00:16:01,525 | INFO | ➡️ GET /health
+2026-04-04 00:16:01,542 | INFO | 192.168.1.39 - - [04/Apr/2026 00:16:01] "GET /health HTTP/1.1" 200 -
+2026-04-04 00:26:18,588 | INFO | ➡️ GET /health
+2026-04-04 00:26:18,600 | INFO | 192.168.1.39 - - [04/Apr/2026 00:26:18] "GET /health HTTP/1.1" 200 -
+2026-04-04 00:26:37,677 | INFO | ➡️ POST /upload_prediction
+2026-04-04 00:26:38,071 | INFO | 📩 /upload_prediction received: {'label': 'Tomato__Tomato_YellowLeaf__Curl_Virus', 'confidence': 1}
+2026-04-04 00:26:38,184 | INFO | 192.168.1.39 - - [04/Apr/2026 00:26:38] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 00:26:40,781 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 00:26:45,325 | INFO | 192.168.1.39 - - [04/Apr/2026 00:26:45] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:26:49,471 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 00:26:52,073 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 00:26:52,082 | INFO | 192.168.1.39 - - [04/Apr/2026 00:26:52] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:27:35,999 | INFO | ➡️ POST /upload_prediction
+2026-04-04 00:27:35,999 | INFO | 📩 /upload_prediction received: {'label': 'Tomato_Late_blight', 'confidence': 0.41}
+2026-04-04 00:27:36,000 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:36] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 00:27:36,879 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 00:27:36,963 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:36] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:27:40,643 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 00:27:42,785 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 00:27:42,791 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:42] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:27:51,143 | INFO | ➡️ POST /upload_prediction
+2026-04-04 00:27:51,144 | INFO | 📩 /upload_prediction received: {'label': 'Tomato__Tomato_YellowLeaf__Curl_Virus', 'confidence': 0.99}
+2026-04-04 00:27:51,144 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:51] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 00:27:52,512 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 00:27:52,595 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:52] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:27:56,632 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 00:27:59,051 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 00:27:59,056 | INFO | 192.168.1.39 - - [04/Apr/2026 00:27:59] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:28:04,924 | INFO | ➡️ POST /upload_prediction
+2026-04-04 00:28:04,925 | INFO | 📩 /upload_prediction received: {'label': 'Tomato__Tomato_YellowLeaf__Curl_Virus', 'confidence': 0.94}
+2026-04-04 00:28:04,925 | INFO | 192.168.1.39 - - [04/Apr/2026 00:28:04] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 00:28:05,913 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 00:28:06,000 | INFO | 192.168.1.39 - - [04/Apr/2026 00:28:06] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:28:09,756 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 00:28:12,984 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 00:28:12,991 | INFO | 192.168.1.39 - - [04/Apr/2026 00:28:12] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 00:59:41,341 | INFO | ➡️ GET /health
+2026-04-04 00:59:41,493 | INFO | 192.168.1.39 - - [04/Apr/2026 00:59:41] "GET /health HTTP/1.1" 200 -
+2026-04-04 01:00:00,858 | INFO | ➡️ POST /upload_prediction
+2026-04-04 01:00:00,879 | INFO | 📩 /upload_prediction received: {'label': 'Tomato__Tomato_YellowLeaf__Curl_Virus', 'confidence': 0.91}
+2026-04-04 01:00:00,888 | INFO | 192.168.1.39 - - [04/Apr/2026 01:00:00] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 01:00:03,928 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 01:00:04,413 | INFO | 192.168.1.39 - - [04/Apr/2026 01:00:04] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 01:00:08,110 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 01:00:10,284 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 01:00:10,289 | INFO | 192.168.1.39 - - [04/Apr/2026 01:00:10] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 01:00:10,411 | INFO | ➡️ GET /evaluate
+2026-04-04 01:02:52,164 | INFO | ➡️ POST /upload_prediction
+2026-04-04 01:02:52,166 | INFO | 📩 /upload_prediction received: {'label': 'Tomato__Tomato_mosaic_virus', 'confidence': 0.99}
+2026-04-04 01:02:52,170 | INFO | 192.168.1.39 - - [04/Apr/2026 01:02:52] "POST /upload_prediction HTTP/1.1" 200 -
+2026-04-04 01:02:53,600 | INFO | ➡️ GET /get_global_weights_binary
+2026-04-04 01:02:53,947 | INFO | 192.168.1.39 - - [04/Apr/2026 01:02:53] "GET /get_global_weights_binary HTTP/1.1" 200 -
+2026-04-04 01:02:57,272 | INFO | ➡️ POST /upload_weights_binary
+2026-04-04 01:03:03,968 | INFO | ✅ Received binary weights and updated global model
+2026-04-04 01:03:03,976 | INFO | 192.168.1.39 - - [04/Apr/2026 01:03:03] "POST /upload_weights_binary HTTP/1.1" 200 -
+2026-04-04 01:03:04,060 | INFO | ➡️ GET /evaluate
+2026-04-04 01:03:05,354 | INFO | 192.168.1.39 - - [04/Apr/2026 01:03:05] "GET /evaluate HTTP/1.1" 200 -
+2026-04-04 01:06:05,551 | INFO | 192.168.1.39 - - [04/Apr/2026 01:06:05] "GET /evaluate HTTP/1.1" 200 -
