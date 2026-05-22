@@ -27,8 +27,7 @@ import java.io.File
 import java.util.concurrent.Executors
 
 // 🔥 UPDATE THIS IP: Run 'ipconfig' on your PC and use your IPv4 address here
-const val SERVER_URL = "http://10.168.35.250:8000"
-
+const val SERVER_URL = "http://192.168.1.46:8000"
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
